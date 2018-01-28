@@ -149,6 +149,11 @@ header h1 {
     text-transform: uppercase;
 }
 
+header a {
+    color: #363636;
+    text-decoration: none;
+}
+
 nav {
     float: right;
     padding: 80px 10%;
