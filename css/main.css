@@ -102,7 +102,7 @@ textarea {
 body {
     color: #363636;
     font-family: "Lato", sans-serif;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 /** GRID STYLES **/
@@ -160,16 +160,22 @@ header a {
     text-decoration: none;
 }
 
+nav {
+    display: none;
+}
+
 .dropbtn {
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 1em;
+    margin: 0 1px;
 }
 
 .dropdown {
     display: block;
     text-align: center;
+    padding-bottom: 10px;
     position: relative;
 }
 
@@ -200,7 +206,7 @@ header a {
 
 }
 
-.dropdown:hover .dropdownbtn {
+.dropdown:hover .dropbtn {
     color: #ba8ca3;
 }
 
@@ -508,14 +514,25 @@ footer {
 
 header {
     background-image: none;
+    max-width: 1200px;
  }
+
+.header-logo {
+    padding-top: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
 
 /*** About Styles ***/
 
 #about img {
     display: block;
     max-height: 300px;
-    max-width: 960px;
+    max-width: 1200px;
     width: 100%;
     height: auto;
     border-top: 3px solid #cdcdcd;
@@ -581,10 +598,69 @@ footer {
 
 /*** Header Styles ***/
 
+.header-logo {
+    float: left;
+    width: 45%;
+    padding: 50px 2%;
+    max-width: 1200px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+nav {
+    display: inline;
+    width: 45%;
+    float: right;
+    padding: 90px 2% 0;
+    margin: 0;
+}
+
+nav a {
+    margin: 0;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #ba8ca3;
+}
+
+nav ul {
+    padding-right: 2%;
+    text-align: right;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+
+}
+
+.dropbtn {
+    display:none;
+}
+
 /*** About Styles ***/
 
 
 /*** Feed Styles ***/
+
+/** Footer Styles ***/
+
+#contact h2, #contact h3, #contact ul {
+    line-height: 2em;
+}
+
+#contact i {
+    font-size: 1.25em;
+}
 
 
     } /** Desktop Styles **/
